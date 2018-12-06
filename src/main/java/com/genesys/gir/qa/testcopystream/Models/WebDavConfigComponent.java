@@ -10,6 +10,34 @@ public class WebDavConfigComponent {
     private int port;
     private String username;
     private String password;
+    private String url;
+    private int maxPerRouteConnection;
+    private int maxTotalConnection;
+    private int socketTimeout;
+
+    public int getSocketTimeout() {
+        return socketTimeout;
+    }
+
+    public void setSocketTimeout(int socketTimeout) {
+        this.socketTimeout = socketTimeout;
+    }
+
+    public int getMaxPerRouteConnection() {
+        return maxPerRouteConnection;
+    }
+
+    public void setMaxPerRouteConnection(int maxPerRouteConnection) {
+        this.maxPerRouteConnection = maxPerRouteConnection;
+    }
+
+    public int getMaxTotalConnection() {
+        return maxTotalConnection;
+    }
+
+    public void setMaxTotalConnection(int maxTotalConnection) {
+        this.maxTotalConnection = maxTotalConnection;
+    }
 
     public String getHost() {
         return host;
@@ -41,5 +69,13 @@ public class WebDavConfigComponent {
 
     public String getUsername() {
         return username;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
